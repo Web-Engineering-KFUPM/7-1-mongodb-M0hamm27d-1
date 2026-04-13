@@ -189,7 +189,8 @@ import mongoose from "mongoose";
 
 
 // establish connection
-mongoose.connect("mongodb://S202277540:SWE363MongoDB@ac-afbjwbf-shard-00-00.sgv6n70.mongodb.net:27017,ac-afbjwbf-shard-00-01.sgv6n70.mongodb.net:27017,ac-afbjwbf-shard-00-02.sgv6n70.mongodb.net:27017/labDB?ssl=true&replicaSet=atlas-3lfueq-shard-0&authSource=admin&appName=cluster0")
+
+mongoose.connect("mongodb+srv://S202277540:SWE363MongoDB@cluster0.sgv6n70.mongodb.net/labDB")
 .then(() => console.log("✅ Connected"))
 .catch(err => console.log("❌ Error:", err));
 
